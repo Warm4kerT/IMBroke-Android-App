@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/cardview_default_elevation">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="65dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cardDescription"
+            android:textSize="18dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/cardBtnDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            app:icon="@android:drawable/ic_input_delete"
+            app:iconPadding="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/cardBtnEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="5dp"
+            app:icon="@android:drawable/ic_menu_edit">
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
